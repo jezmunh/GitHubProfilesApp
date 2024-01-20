@@ -3,7 +3,7 @@ export const GetInfo = async (username) => {
     try {
         const response = await fetch(url);
         const result = await response.json();
-        let data = {profileData: result, status_code: response.status}; // I'm not sure that thing will work properly but why not         
+        let data = {profileData: result, status_code: response.status};        
         return data;
     } catch (error) {
         console.error(error);
